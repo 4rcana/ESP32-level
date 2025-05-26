@@ -1,0 +1,301 @@
+019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+lo�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 26 2025 23:36:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b2a0h ( 45728) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b2c8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b2ec vaddr=3ffb0000 size=023ach (  9132) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d6a0 vaddr=40080000 size=02978h ( 10616) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16778h ( 92024) map[0m
+[0;32mI (156) esp_image: segment 5: paddr=000367a0 vaddr=40082978 size=0c160h ( 49504) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (201) app_init: Application information:[0m
+[0;32mI (201) app_init: Project name:     ESP32_level[0m
+[0;32mI (205) app_init: App version:      1[0m
+[0;32mI (209) app_init: Compile time:     May 26 2025 23:21:11[0m
+[0;32mI (214) app_init: ELF file SHA256:  9691c83f2...[0m
+[0;32mI (218) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (222) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (226) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (230) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (234) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (240) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFB2DC0 len 0002D240 (180 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (255) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 4008EAD8 len 00011528 (69 KiB): IRAM[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (270) spi_flash: flash io: dio[0m
+[0;33mW (273) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+[0;32mI (294) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Debounce timer created successfully
+Semaphore created successfully
+Successful MPU6050 initialization
+Acce x: -0.012451
+Acce y: -0.004883
+Acce z: 0.966309
+Acce x: -0.011230
+Acce y: -0.009521
+Acce z: 0.972900
+Acce x: -0.007324
+Acce y: -0.009766
+Acce z: 0.969971
+Acce x: -0.012939
+Acce y: -0.014404
+Acce z: 0.963135
+Acce x: -0.011963
+Acce y: -0.015137
+Acce z: 0.973145
+Acce x: -0.010010
+Acce y: -0.011719
+Acce z: 0.967773
+Acce x: -0.008545
+Acce y: -0.008301
+Acce z: 0.967285
+Acce x: -0.001953
+Acce y: 0.050781
+Acce z: 1.166260
+Acce x: 0.083496
+Acce y: -0.049316
+Acce z: 0.979492
+Acce x: 0.078125
+Acce y: -0.000977
+Acce z: 0.974609
+Acce x: 0.077393
+Acce y: -0.009033
+Acce z: 0.930664
+Acce x: 0.205322
+Acce y: -0.029053
+Acce z: 0.964111
+Acce x: 0.248047
+Acce y: -0.022217
+Acce z: 0.959961
+Acce x: 0.253418
+Acce y: -0.024658
+Acce z: 0.963867
+Acce x: 0.380127
+Acce y: -0.016846
+Acce z: 0.905029
+Acce x: 0.391113
+Acce y: -0.023438
+Acce z: 0.924316
+Acce x: 0.383545
+Acce y: -0.018311
+Acce z: 0.927002
+Acce x: 0.314209
+Acce y: -0.075439
+Acce z: 0.938965
+Acce x: 0.135986
+Acce y: -0.017822
+Acce z: 0.994873
+Acce x: 0.049805
+Acce y: -0.019531
+Acce z: 0.973633
+Acce x: -0.008545
+Acce y: -0.018066
+Acce z: 0.989258
+Acce x: -0.008545
+Acce y: -0.015869
+Acce z: 0.964355
+Acce x: -0.008301
+Acce y: -0.017090
+Acce z: 0.974854
+Acce x: -0.011963
+Acce y: -0.012695
+Acce z: 0.976074
+Acce x: -0.013672
+Acce y: -0.013916
+Acce z: 0.965820
+Acce x: -0.009521
+Acce y: -0.016602
+Acce z: 0.977295
+Acce x: -0.003174
+Acce y: -0.049561
+Acce z: 1.015625
+Acce x: 0.068359
+Acce y: -0.000977
+Acce z: 0.947266
+Acce x: 0.143066
+Acce y: -0.011475
+Acce z: 0.963867
+Acce x: 0.177246
+Acce y: -0.010498
+Acce z: 0.964600
+Acce x: 0.165039
+Acce y: -0.022217
+Acce z: 0.966309
+Acce x: 0.105469
+Acce y: -0.032959
+Acce z: 0.977295
+Acce x: 0.050537
+Acce y: -0.014160
+Acce z: 0.969238
+Acce x: -0.000244
+Acce y: -0.017090
+Acce z: 0.963867
+Acce x: -0.015381
+Acce y: -0.010986
+Acce z: 0.974854
+Acce x: -0.011963
+Acce y: -0.014404
+Acce z: 0.977295
+Acce x: -0.005859
+Acce y: -0.008301
+Acce z: 0.975098
+Acce x: -0.039307
+Acce y: 0.018799
+Acce z: 1.002686
+Acce x: -0.039795
+Acce y: -0.008301
+Acce z: 0.964844
+Acce x: -0.078857
+Acce y: -0.008301
+Acce z: 0.960938
+Acce x: -0.105225
+Acce y: -0.002441
+Acce z: 0.959717
+Acce x: -0.101807
+Acce y: -0.003174
+Acce z: 0.926758
+Acce x: -0.032959
+Acce y: 0.012207
+Acce z: 0.964844
+Acce x: -0.012207
+Acce y: -0.043213
+Acce z: 0.967285
+Acce x: -0.011230
+Acce y: -0.144531
+Acce z: 0.969238
+Acce x: -0.006836
+Acce y: -0.233887
+Acce z: 0.956787
+Acce x: -0.010986
+Acce y: -0.020996
+Acce z: 1.009766
+Acce x: -0.007812
+Acce y: -0.018066
+Acce z: 0.976807
+Acce x: -0.007324
+Acce y: 0.021484
+Acce z: 0.968506
+Acce x: -0.004150
+Acce y: -0.018066
+Acce z: 0.970947
+Acce x: -0.009521
+Acce y: -0.005371
+Acce z: 0.967285
+Acce x: -0.012207
+Acce y: -0.013184
+Acce z: 0.967529
+Acce x: -0.003662
+Acce y: -0.210449
+Acce z: 0.950195
+Acce x: 0.002197
+Acce y: -0.084229
+Acce z: 0.953613
+Acce x: -0.010742
+Acce y: 0.000000
+Acce z: 0.978271
+Acce x: -0.008057
+Acce y: -0.011475
+Acce z: 0.975098
+Acce x: -0.009277
+Acce y: 0.018311
+Acce z: 0.951904
+Acce x: 0.036377
+Acce y: 0.000000
+Acce z: 0.962402
+Acce x: -0.031250
+Acce y: 0.075195
+Acce z: 0.889404
+Acce x: -0.003418
+Acce y: -0.013916
+Acce z: 0.974609
+Acce x: -0.011719
+Acce y: -0.014404
+Acce z: 0.964111
+Acce x: -0.010254
+Acce y: -0.014160
+Acce z: 0.960693
+Acce x: -0.006836
+Acce y: -0.009521
+Acce z: 0.975586
+Acce x: -0.009033
+Acce y: -0.013428
+Acce z: 0.964600
+Acce x: -0.010498
+Acce y: -0.009521
+Acce z: 0.963867
+Acce x: -0.006836
+Acce y: -0.009766
+Acce z: 0.970215
+Acce x: -0.014648
+Acce y: -0.011719
+Acce z: 0.971191
+Acce x: -0.009033
+Acce y: -0.013672
+Acce z: 0.969238
+Acce x: -0.008789
+Acce y: -0.009766
+Acce z: 0.972168
+Acce x: -0.005371
+Acce y: -0.007324
+Acce z: 0.968506
+Acce x: -0.011475
+Acce y: -0.014648
+Acce z: 0.973389
+Acce x: -0.005859
+Acce y: -0.011230
+Acce z: 0.966064
+Acce x: -0.013672
+Acce y: -0.010254
+Acce z: 0.973389
+Acce x: -0.013672
+Acce y: -0.008545
+Acce z: 0.965820
+Acce x: -0.010254
+Acce y: -0.010010
+Acce z: 0.977783
+Acce x: -0.009766
+Acce y: -0.015869
+Acce z: 0.968506
+Acce x: -0.013184
+Acce y: -0.015625
+Acce z: 0.974121
+Acce x: -0.009521
+Acce y: -0.013428
+Acce z: 0.973145

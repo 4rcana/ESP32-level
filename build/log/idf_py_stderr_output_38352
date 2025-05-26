@@ -1,0 +1,212 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+[0m
+[0;33m--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+[0m
+[0;33m--- 0x4008199d: panic_abort at D:/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x400867c9: esp_system_abort at D:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+--- 0x4008cd81: abort at D:/esp/esp-idf/components/newlib/abort.c:38
+--- 0x400d9cb0: check_i2c_driver_conflict at D:/esp/esp-idf/components/driver/i2c/i2c.c:1719
+--- 0x400d1d4b: do_global_ctors at D:/esp/esp-idf/components/esp_system/startup.c:104
+--- 0x400d1e32: start_cpu0_default at D:/esp/esp-idf/components/esp_system/startup.c:206
+--- 0x40081436: call_start_cpu0 at D:/esp/esp-idf/components/esp_system/port/cpu_start.c:840 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,390 @@
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x400�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 26 2025 23:36:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b300h ( 45824) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b328 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b34c vaddr=3ffb0000 size=023ach (  9132) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d700 vaddr=40080000 size=02918h ( 10520) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17e8ch ( 97932) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037eb4 vaddr=40082918 size=0c1c0h ( 49600) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ESP32_level[0m
+[0;32mI (207) app_init: App version:      1[0m
+[0;32mI (211) app_init: Compile time:     May 26 2025 23:21:11[0m
+[0;32mI (216) app_init: ELF file SHA256:  5a80a6705...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (224) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (242) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFB2DE8 len 0002D218 (180 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008EAD8 len 00011528 (69 KiB): IRAM[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Debounce timer created successfully
+Semaphore created successfully
+Successful MPU6050 initialization
+Pitch: 1.071786
+Roll: 0.882923
+Pitch: 0.922092
+Roll: 0.785303
+Pitch: 1.107185
+Roll: 0.739222
+Pitch: 0.903412
+Roll: 0.627726
+Pitch: 0.999434
+Roll: 0.922336
+Pitch: 1.137347
+Roll: 0.684205
+Pitch: 0.973974
+Roll: 0.622742
+Pitch: 0.943036
+Roll: 0.804719
+Pitch: 1.033832
+Roll: 0.732713
+Pitch: 1.056045
+Roll: 0.586699
+Pitch: 8.259773
+Roll: 8.374166
+Pitch: 0.626846
+Roll: 4.139130
+Pitch: 0.344686
+Roll: 1.289594
+Pitch: 0.352590
+Roll: 3.868075
+Pitch: 2.087547
+Roll: 34.636120
+Pitch: 1.919131
+Roll: 38.352329
+Pitch: 2.058590
+Roll: 39.182411
+Pitch: 3.487384
+Roll: 36.649429
+Pitch: 1.553484
+Roll: 15.198322
+Pitch: 2.084673
+Roll: 20.482384
+Pitch: 1.941340
+Roll: 20.687084
+Pitch: 6.755046
+Roll: 3.516582
+Pitch: 19.026691
+Roll: 3.956311
+Pitch: 20.022472
+Roll: 4.321636
+Pitch: 18.986984
+Roll: 4.219787
+Pitch: 23.257971
+Roll: 6.493571
+Pitch: 31.517183
+Roll: 5.787901
+Pitch: 32.262001
+Roll: 6.143798
+Pitch: 31.862770
+Roll: 6.727817
+Pitch: 22.876732
+Roll: 6.927220
+Pitch: 17.242290
+Roll: 4.797820
+Pitch: 13.761826
+Roll: 5.241447
+Pitch: 10.457022
+Roll: 4.313863
+Pitch: 5.191500
+Roll: 3.140404
+Pitch: 1.853605
+Roll: 1.035583
+Pitch: 1.134898
+Roll: 0.736675
+Pitch: 0.968414
+Roll: 0.720419
+Pitch: 1.067155
+Roll: 0.855622
+Pitch: 0.906344
+Roll: 0.805260
+Pitch: 1.021736
+Roll: 0.687667
+Pitch: 0.878905
+Roll: 0.725545
+Pitch: 0.868225
+Roll: 0.676732
+Pitch: 1.059807
+Roll: 0.539560
+Pitch: 0.989616
+Roll: 0.562802
+Pitch: 0.995740
+Roll: 0.580401
+Pitch: 0.811824
+Roll: 0.852992
+Pitch: 1.036864
+Roll: 0.534994
+Pitch: 0.974526
+Roll: 0.651769
+Pitch: 1.019986
+Roll: 0.820829
+Pitch: 0.945334
+Roll: 0.647455
+Pitch: 0.863498
+Roll: 0.872490
+Pitch: 0.957270
+Roll: 0.592526
+Pitch: 1.066252
+Roll: 0.641948
+Pitch: 1.022156
+Roll: 0.824395
+Pitch: 1.083646
+Roll: 0.599331
+Pitch: 0.933682
+Roll: 0.618932
+Pitch: 1.008093
+Roll: 0.981191
+Pitch: 0.788677
+Roll: 0.740849
+Pitch: 1.054129
+Roll: 0.920095
+Pitch: 0.922337
+Roll: 0.628786
+Pitch: 0.854021
+Roll: 0.758180
+Pitch: 1.011219
+Roll: 0.618565
+Pitch: 0.898764
+Roll: 0.669196
+Pitch: 1.120794
+Roll: 0.977665
+Pitch: 0.889075
+Roll: 0.677664
+Pitch: 1.002184
+Roll: 0.781873
+Pitch: 1.032540
+Roll: 0.846784
+Pitch: 0.917023
+Roll: 0.856320
+Pitch: 1.226434
+Roll: 0.719437
+Pitch: 0.996472
+Roll: 0.827989
+Pitch: 0.883896
+Roll: 0.774007
+Pitch: 1.111711
+Roll: 0.654395
+Pitch: 0.862495
+Roll: 0.877983
+Pitch: 1.016649
+Roll: 0.741249
+Pitch: 0.782834
+Roll: 0.638200
+Pitch: 0.902878
+Roll: 0.644021
+Pitch: 1.063877
+Roll: 0.651409
+Pitch: 1.064822
+Roll: 0.861063
+Pitch: 0.982797
+Roll: 0.976588
+Pitch: 0.974041
+Roll: 0.721850
+Pitch: 1.131568
+Roll: 0.789665
+Pitch: 0.851273
+Roll: 0.609146
+Pitch: 1.013927
+Roll: 0.811996
+Pitch: 0.849736
+Roll: 0.876612
+Pitch: 0.963103
+Roll: 0.900807
+Pitch: 1.073621
+Roll: 0.734255
+Pitch: 0.992691
+Roll: 0.842092
+Pitch: 0.976242
+Roll: 0.764560
+Pitch: 1.154875
+Roll: 0.875395
+Pitch: 0.903235
+Roll: 0.660525
+Pitch: 0.981175
+Roll: 0.911273
+Pitch: 0.775723
+Roll: 0.719056
+Pitch: 1.056325
+Roll: 0.856686
+Pitch: 1.057730
+Roll: 0.764088
+Pitch: 0.931246
+Roll: 0.808234
+Pitch: 0.600918
+Roll: 0.658900
+Pitch: 0.829104
+Roll: 0.556239
+Pitch: 0.989806
+Roll: 0.656293
+Pitch: 1.136652
+Roll: 0.766507
+Pitch: 0.911658
+Roll: 0.759572
+Pitch: 1.282860
+Roll: 0.674907
+Pitch: 1.170420
+Roll: 0.507632
+Pitch: 0.896152
+Roll: 0.727661
+Pitch: 1.053290
+Roll: 0.656031
+Pitch: 0.997357
+Roll: 0.867295
+Pitch: 0.946213
+Roll: 0.857229
+Pitch: 1.148247
+Roll: 0.726417
+Pitch: 1.101371
+Roll: 0.542696
+Pitch: 0.829848
+Roll: 0.741301
+Pitch: 1.066779
+Roll: 0.803376
+Pitch: 0.937567
+Roll: 0.758419
+Pitch: 1.036556
+Roll: 0.634958
+Pitch: 0.952762
+Roll: 0.610688
+Pitch: 1.014278
+Roll: 0.757439
+Pitch: 1.112075
+Roll: 0.773022
+Pitch: 0.783369
+Roll: 0.698860
+Pitch: 1.053620
+Roll: 0.674176
+Pitch: 0.869458
+Roll: 0.581009
+Pitch: 0.910863
+Roll: 0.763086
+Pitch: 0.849139
+Roll: 0.773394
+Pitch: 0.740297
+Roll: 0.775948
+Pitch: 0.887906
+Roll: 0.846686
+Pitch: 0.809640
+Roll: 0.890612
+Pitch: 0.810427
+Roll: 0.617239
+Pitch: 1.062757
+Roll: 0.676871
+Pitch: 0.852319
+Roll: 0.607568
+Pitch: 1.034870
+Roll: 0.767408
+Pitch: 0.749782
+Roll: 0.825932
+Pitch: 1.083625
+Roll: 0.859851
+Pitch: 1.072079
+Roll: 0.802449
+Pitch: 0.867515
+Roll: 0.781083
+Pitch: 1.086246
+Roll: 0.606804
+Pitch: 0.934062
+Roll: 0.791927
+Pitch: 1.218852
+Roll: 0.660181
+Pitch: 0.719886
+Roll: 0.672584
+Pitch: 1.017286
+Roll: 0.766582
+Pitch: 0.936136
+Roll: 0.612392
+Pitch: 0.889831
+Roll: 0.597167
+Pitch: 0.980498
+Roll: 0.658565
+Pitch: 0.849162
+Roll: 0.685586
+Pitch: 1.076995
+Roll: 0.850237
+Pitch: 0.820704
+Roll: 0.783700
+Pitch: 0.835197
+Roll: 0.535544
+Pitch: 0.985993
+Roll: 0.474948
+Pitch: 1.048029
+Roll: 0.467668
+Pitch: 0.810959
+Roll: 0.571566
+Pitch: 0.744601
+Roll: 0.773501
+Pitch: 0.927946
+Roll: 0.903178
+Pitch: 0.893254
+Roll: 0.925475
+Pitch: 0.941837
+Roll: 0.686485
+Pitch: 0.963335
+Roll: 0.727270
+Pitch: 0.845000
+Roll: 0.787032
+Pitch: 0.984703
+Roll: 0.561240
+Pitch: 1.121026
+Roll: 0.751961
+Pitch: 0.925453
+Roll: 0.660005
+Pitch: 0.685677
+Roll: 0.566128
+Pitch: 1.017355
+Roll: 0.706666
+Pitch: 0.948039
+Roll: 0.637364
+Pitch: 1.220214
+Roll: 0.685935
+Pitch: 0.941381
+Roll: 0.664520
+Pitch: 1.014144
+Roll: 0.672584
+Pitch: 1.012086
+Roll: 0.640035

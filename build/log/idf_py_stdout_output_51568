@@ -1,0 +1,436 @@
+019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+lo�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 26 2025 23:36:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b310h ( 45840) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b338 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b35c vaddr=3ffb0000 size=023ach (  9132) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d710 vaddr=40080000 size=02908h ( 10504) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17f68h ( 98152) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037f90 vaddr=40082908 size=0c1d0h ( 49616) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ESP32_level[0m
+[0;32mI (208) app_init: App version:      1[0m
+[0;32mI (211) app_init: Compile time:     May 26 2025 23:21:11[0m
+[0;32mI (216) app_init: ELF file SHA256:  e64164722...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (224) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (242) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFB2DF0 len 0002D210 (180 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008EAD8 len 00011528 (69 KiB): IRAM[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Debounce timer created successfully
+Semaphore created successfully
+Successful MPU6050 initialization
+Rotation: 0.310455
+Roll: -0.059593
+Yaw: 1.320412
+Rotation: 0.230301
+Roll: -0.128819
+Yaw: 1.454921
+Rotation: 0.430468
+Roll: 0.027206
+Yaw: 1.255589
+Rotation: 0.120312
+Roll: 0.094168
+Yaw: 1.452939
+Rotation: 0.141800
+Roll: -0.125363
+Yaw: 1.231810
+Rotation: 2.324654
+Roll: -1.291164
+Yaw: 7.344741
+Rotation: -0.822654
+Roll: 0.706116
+Yaw: 2.970819
+Rotation: -0.708542
+Roll: 0.267677
+Yaw: 5.933156
+Rotation: -1.270455
+Roll: -0.163860
+Yaw: 10.344757
+Rotation: -3.082454
+Roll: -0.239719
+Yaw: 18.278578
+Rotation: -2.498875
+Roll: 0.847233
+Yaw: 16.122728
+Rotation: 0.324900
+Roll: 0.654201
+Yaw: 1.980502
+Rotation: 2.215613
+Roll: 1.237391
+Yaw: 12.585251
+Rotation: 3.692896
+Roll: 1.289013
+Yaw: 18.524479
+Rotation: 0.944501
+Roll: 0.720885
+Yaw: 3.424919
+Rotation: 0.124426
+Roll: 1.587251
+Yaw: 11.202373
+Rotation: 0.228401
+Roll: -1.434753
+Yaw: 8.727414
+Rotation: -0.030052
+Roll: -2.080227
+Yaw: 8.889400
+Rotation: 0.442370
+Roll: -1.027417
+Yaw: 5.904603
+Rotation: 0.494820
+Roll: 2.763413
+Yaw: 17.003250
+Rotation: 1.129623
+Roll: 5.629721
+Yaw: 28.984699
+Rotation: 1.091451
+Roll: 6.203997
+Yaw: 36.759438
+Rotation: 1.481430
+Roll: 6.314262
+Yaw: 40.461319
+Rotation: 1.214710
+Roll: 7.226086
+Yaw: 38.195930
+Rotation: 1.379177
+Roll: 5.785864
+Yaw: 32.427799
+Rotation: -1.849419
+Roll: -0.121157
+Yaw: 13.206268
+Rotation: -0.223253
+Roll: -1.867576
+Yaw: 11.336432
+Rotation: 0.240924
+Roll: -2.561375
+Yaw: 16.331932
+Rotation: 0.016711
+Roll: -3.196140
+Yaw: 17.462917
+Rotation: 0.230848
+Roll: -4.329379
+Yaw: 21.299000
+Rotation: 0.334818
+Roll: -2.966202
+Yaw: 21.269997
+Rotation: 0.086775
+Roll: -3.646141
+Yaw: 21.470627
+Rotation: -0.453540
+Roll: 4.442580
+Yaw: 14.024372
+Rotation: 4.683504
+Roll: 1.410294
+Yaw: 23.450863
+Rotation: 4.256567
+Roll: 1.305807
+Yaw: 25.560970
+Rotation: 2.521254
+Roll: 2.931099
+Yaw: 17.678329
+Rotation: -4.161281
+Roll: 1.213504
+Yaw: 27.595716
+Rotation: -4.687116
+Roll: 2.528941
+Yaw: 31.400879
+Rotation: -4.710892
+Roll: 2.938580
+Yaw: 29.543074
+Rotation: -3.191739
+Roll: 2.059292
+Yaw: 21.004528
+Rotation: 0.168399
+Roll: 0.074724
+Yaw: 1.816363
+Rotation: 0.187805
+Roll: 0.079154
+Yaw: 1.435605
+Rotation: 0.164372
+Roll: -0.164121
+Yaw: 1.352853
+Rotation: 0.166127
+Roll: -0.302929
+Yaw: 1.327365
+Rotation: 0.191731
+Roll: -0.126296
+Yaw: 1.286825
+Rotation: 0.356609
+Roll: 0.171211
+Yaw: 1.288940
+Rotation: 0.292545
+Roll: -0.104996
+Yaw: 1.318671
+Rotation: 0.306436
+Roll: 0.158588
+Yaw: 1.141077
+Rotation: 0.815627
+Roll: -2.187693
+Yaw: 4.489746
+Rotation: 8.019161
+Roll: 0.390032
+Yaw: 35.033867
+Rotation: 9.171839
+Roll: -0.254487
+Yaw: 53.150726
+Rotation: 7.856823
+Roll: 0.033637
+Yaw: 55.394577
+Rotation: 8.375650
+Roll: 0.197556
+Yaw: 57.863293
+Rotation: 6.931276
+Roll: -1.000724
+Yaw: 50.353775
+Rotation: 3.474154
+Roll: -0.399716
+Yaw: 18.763426
+Rotation: 0.950637
+Roll: 0.003478
+Yaw: 2.766436
+Rotation: -3.372890
+Roll: -0.348077
+Yaw: 24.125832
+Rotation: -6.599606
+Roll: 0.512280
+Yaw: 37.974041
+Rotation: -7.668262
+Roll: 0.398443
+Yaw: 43.595085
+Rotation: -7.633926
+Roll: 1.035888
+Yaw: 45.716278
+Rotation: -8.981985
+Roll: 0.671048
+Yaw: 46.118980
+Rotation: -7.631016
+Roll: -0.485207
+Yaw: 44.679657
+Rotation: -3.005233
+Roll: 2.975752
+Yaw: 18.319197
+Rotation: -0.571852
+Roll: 0.233015
+Yaw: 8.891188
+Rotation: 0.757673
+Roll: -1.604932
+Yaw: 11.837511
+Rotation: 0.930020
+Roll: -5.962325
+Yaw: 35.790390
+Rotation: 1.057748
+Roll: -5.911597
+Yaw: 36.143608
+Rotation: 1.038406
+Roll: -1.817382
+Yaw: 12.463127
+Rotation: 1.063202
+Roll: 5.006353
+Yaw: 30.347916
+Rotation: 1.467584
+Roll: 7.305561
+Yaw: 44.182571
+Rotation: 0.293427
+Roll: 0.602030
+Yaw: 6.248904
+Rotation: -0.778490
+Roll: -1.467301
+Yaw: 3.925828
+Rotation: 0.547950
+Roll: 0.867702
+Yaw: 2.051688
+Rotation: 0.149133
+Roll: 0.811438
+Yaw: 3.854786
+Rotation: 0.570211
+Roll: -1.074002
+Yaw: 2.836413
+Rotation: 0.707591
+Roll: -0.605823
+Yaw: 2.235728
+Rotation: -0.499844
+Roll: 0.839095
+Yaw: 5.353218
+Rotation: -0.484656
+Roll: 0.024074
+Yaw: 3.664900
+Rotation: -0.537894
+Roll: -0.066119
+Yaw: 5.685995
+Rotation: -1.950515
+Roll: -1.273004
+Yaw: 7.653976
+Rotation: -0.818528
+Roll: 0.051044
+Yaw: 8.719286
+Rotation: -0.689444
+Roll: 1.754970
+Yaw: 6.315203
+Rotation: 0.212778
+Roll: 0.187645
+Yaw: 2.914458
+Rotation: 0.103559
+Roll: 0.389841
+Yaw: 2.916792
+Rotation: 0.244228
+Roll: -0.832888
+Yaw: 1.714064
+Rotation: 0.571343
+Roll: 7.795527
+Yaw: 8.057463
+Rotation: 0.364019
+Roll: -0.064029
+Yaw: 1.049523
+Rotation: 0.319148
+Roll: -0.192250
+Yaw: 1.108770
+Rotation: 0.139704
+Roll: 0.061707
+Yaw: 1.136485
+Rotation: 0.128154
+Roll: -0.038676
+Yaw: 1.250161
+Rotation: 0.116006
+Roll: 0.066904
+Yaw: 1.097495
+Rotation: 0.345912
+Roll: -0.083835
+Yaw: 1.065490
+Rotation: 0.202217
+Roll: -1.491436
+Yaw: 1.859787
+Rotation: 0.051765
+Roll: 3.922746
+Yaw: 19.097557
+Rotation: 1.311957
+Roll: 7.015652
+Yaw: 44.853207
+Rotation: 2.971762
+Roll: 11.819458
+Yaw: 69.591980
+Rotation: 3.358937
+Roll: 8.970314
+Yaw: 74.933685
+Rotation: 3.721191
+Roll: 6.835434
+Yaw: -8.217365
+Rotation: 3.575616
+Roll: 7.051620
+Yaw: -8.835876
+Rotation: 3.982035
+Roll: 7.175331
+Yaw: -9.046761
+Rotation: 3.513732
+Roll: 7.223045
+Yaw: -8.809532
+Rotation: 3.544899
+Roll: 7.303860
+Yaw: -8.918133
+Rotation: 3.438275
+Roll: 7.021683
+Yaw: -8.735939
+Rotation: 4.147856
+Roll: 2.289841
+Yaw: -3.129349
+Rotation: 4.136633
+Roll: 7.232201
+Yaw: -10.029354
+Rotation: 3.704434
+Roll: 5.509911
+Yaw: -7.208733
+Rotation: 3.267948
+Roll: 8.835846
+Yaw: -10.244915
+Rotation: 3.485125
+Roll: 6.866692
+Yaw: -8.458599
+Rotation: 3.440860
+Roll: 6.932861
+Yaw: -8.166290
+Rotation: 3.178657
+Roll: 8.494347
+Yaw: -10.410873
+Rotation: 2.648076
+Roll: 0.604141
+Yaw: 83.513611
+Rotation: 3.104207
+Roll: 6.872509
+Yaw: -7.408051
+Rotation: 3.704418
+Roll: 7.210815
+Yaw: -8.467442
+Rotation: 3.180263
+Roll: 7.304028
+Yaw: -8.257915
+Rotation: 3.519550
+Roll: 7.274776
+Yaw: -8.491112
+Rotation: 3.722975
+Roll: 7.180698
+Yaw: -8.330124
+Rotation: 3.760441
+Roll: 0.470997
+Yaw: -0.578346
+Rotation: 2.882804
+Roll: 8.829180
+Yaw: 54.003742
+Rotation: 0.247022
+Roll: 2.740701
+Yaw: 12.994449
+Rotation: 0.171214
+Roll: -0.042997
+Yaw: 1.195170
+Rotation: 0.285822
+Roll: -0.079952
+Yaw: 1.152976
+Rotation: 0.271501
+Roll: 0.032351
+Yaw: 1.087926
+Rotation: 0.344402
+Roll: -0.171998
+Yaw: 1.165972
