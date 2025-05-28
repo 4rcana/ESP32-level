@@ -16,7 +16,6 @@
 char message_buffer[40];
 float pitch, pitch_0, pitch_1, roll, roll_0, roll_1;
 mpu6050_acce_value_t acce_value_0, acce_value_1;
-RTC_DATA_ATTR int sleep_counter = 0;
 
 hd44780_t lcd = {
 	.write_cb = NULL,
@@ -98,7 +97,6 @@ void ActiveTask(void* pvParameters)
 
 			printf("Entering Sleep...\n");
 			esp_deep_sleep_start();
-		}
 	}
 }
 
@@ -174,7 +172,5 @@ void app_main(void)
 	if (wakeup_reason == ESP_SLEEP_WAKEUP_EXT0) {
     		printf("Woken up by button press!\n");
 	}
-
-	printf("Wake count: %d\n", sleep_counter);
 }
 
