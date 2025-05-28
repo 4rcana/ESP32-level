@@ -3,7 +3,6 @@
 #include "driver/i2c.h"
 #include "freertos/FreeRTOS.h"
 #include "esp_sleep.h"
-#include "inttypes.h"
 #include "mpu6050.h"
 #include "hd44780.h"
 #include "math.h"
@@ -19,7 +18,7 @@ float pitch, pitch_0, pitch_1, roll, roll_0, roll_1;
 mpu6050_acce_value_t acce_value_0, acce_value_1;
 RTC_DATA_ATTR int sleep_counter = 0;
 
-hd44780_t lcd_conf = {
+hd44780_t lcd = {
 	.write_cb = NULL,
 	.pins = {
 		.rs =	GPIO_NUM_23,
@@ -32,11 +31,10 @@ hd44780_t lcd_conf = {
 	},
 	.font = HD44780_FONT_5X8,
 	.lines = 2,
-	.backlight = false
+	.backlight = 0 
 };
 
-TimerHandle_t debounce_timer = NULL;
-SemaphoreHandle_t xSemaphore = NULL;
+// TimerHandle_t debounce_timer = NULL;
 mpu6050_handle_t mpu6050_0_handle = NULL, mpu6050_1_handle = NULL;
 
 /* Conversion to Degrees */
@@ -45,7 +43,7 @@ float rad_to_deg(float radians)
 	return radians * (180.0 / M_PI);
 }
 
-
+/*
 // ISR: Handle interrupt when button is pressed
 static void IRAM_ATTR button_isr_handler(void* arg)
 {
@@ -60,54 +58,45 @@ void debounce_timer_callback(TimerHandle_t Timer)
 		xSemaphoreGive(xSemaphore);
 	}
 }
-
+*/
 
 void ActiveTask(void* pvParameters)
 {
 	while(1)
 	{
-		if(xSemaphoreTake(xSemaphore, portMAX_DELAY))
-		{
 			printf("Entering ActiveTask...\r\n");
+
 			mpu6050_wake_up(mpu6050_0_handle);
 			mpu6050_wake_up(mpu6050_1_handle);
-			vTaskDelay(10);
 
 			mpu6050_get_acce(mpu6050_0_handle, &acce_value_0);
 			mpu6050_get_acce(mpu6050_1_handle, &acce_value_1);
 
-			pitch_0 = fabs(rad_to_deg(atan( acce_value_0.acce_x / sqrt( pow(acce_value_0.acce_y, 2) + pow(acce_value_0.acce_z, 2)))));
-			pitch_1 = fabs(rad_to_deg(atan( acce_value_1.acce_x / sqrt( pow(acce_value_1.acce_y, 2) + pow(acce_value_1.acce_z, 2)))));
-			pitch = (pitch_0 + pitch_1) / 2;
-			printf("Pitch: %f\r\n", pitch);
-		
-			roll_0 = fabs(rad_to_deg(atan( acce_value_0.acce_y / sqrt( pow(acce_value_0.acce_x, 2) + pow(acce_value_0.acce_z, 2)))));
-			roll_1 = fabs(rad_to_deg(atan( acce_value_1.acce_y / sqrt( pow(acce_value_1.acce_x, 2) + pow(acce_value_1.acce_z, 2)))));
+			roll_0 = fabs( rad_to_deg( atan( acce_value_0.acce_x / sqrt( pow(acce_value_0.acce_y, 2) + pow(acce_value_0.acce_z, 2)))));
+			roll_1 = fabs( rad_to_deg( atan( acce_value_1.acce_x / sqrt( pow(acce_value_1.acce_y, 2) + pow(acce_value_1.acce_z, 2)))));
 			roll = (roll_0 + roll_1) / 2;
-			printf("Roll: %f\r\n", roll);
+			printf("Roll: %f\n", roll);
+		
+			pitch_0 = fabs( rad_to_deg( atan( acce_value_0.acce_y / sqrt( pow(acce_value_0.acce_x, 2) + pow(acce_value_0.acce_z, 2)))));
+			pitch_1 = fabs( rad_to_deg( atan( acce_value_1.acce_y / sqrt( pow(acce_value_1.acce_x, 2) + pow(acce_value_1.acce_z, 2)))));
+			pitch = (pitch_0 + pitch_1) / 2;
+			printf("Pitch: %f\n", pitch);
 		
 			mpu6050_sleep(mpu6050_0_handle);
 			mpu6050_sleep(mpu6050_1_handle);
 
-			sprintf(message_buffer, "works");
-			hd44780_puts(&lcd_conf, message_buffer);
-			vTaskDelay(500);
+			sprintf(message_buffer, "Roll: %.3f", roll);
+			hd44780_gotoxy(&lcd, 0, 0);
+			hd44780_puts(&lcd, message_buffer);
 
-			xSemaphoreGive(xSemaphore);
-			vTaskDelay(10);
-		}
-	}
-}
+			sprintf(message_buffer, "Pitch: %.3f", pitch);
+			hd44780_gotoxy(&lcd, 0, 1);
+			hd44780_puts(&lcd, message_buffer);
 
-void SleepTask(void* pvParameters)
-{
-	while(1)
-	{
-		if(xSemaphoreTake(xSemaphore, portMAX_DELAY))
-		{
-			printf("Entering Sleep...\r\n");
-			sleep_counter++;
-			vTaskDelay(100);
+			vTaskDelay(1000);			// Displays data for 10s before turning lcd off
+			hd44780_control(&lcd, 0, 0, 0);
+
+			printf("Entering Sleep...\n");
 			esp_deep_sleep_start();
 		}
 	}
@@ -118,17 +107,16 @@ void app_main(void)
 	// BUTTON_GPIO configuration
 	gpio_reset_pin(BUTTON_PIN);
 	gpio_set_direction(BUTTON_PIN, GPIO_MODE_INPUT);
-	gpio_set_intr_type(BUTTON_PIN, GPIO_INTR_NEGEDGE);
 	esp_sleep_enable_ext0_wakeup(GPIO_NUM_4, 0);
+//	gpio_set_intr_type(BUTTON_PIN, GPIO_INTR_NEGEDGE);
 
 	// ISR initialization
-	
+/*	
 	gpio_install_isr_service(0);
 	gpio_isr_handler_add(BUTTON_PIN, button_isr_handler, NULL);
 	
 
 	// Create timer debounce
-	
 	debounce_timer=	xTimerCreate("debounce_timer",
 			pdMS_TO_TICKS(DEBOUNCE_TIME_MS),
 			pdFALSE,
@@ -139,7 +127,7 @@ void app_main(void)
 	{
 		printf("Debounce timer created successfully\n");
 	}
-	
+*/	
 
 	// I2C initialization
 	i2c_config_t conf = {
@@ -155,8 +143,15 @@ void app_main(void)
 	i2c_driver_install(I2C_NUM_0, I2C_MODE_MASTER, 0, 0, 0);
 
 	// HD44780 initialization
-	hd44780_init(&lcd_conf);
-	hd44780_control(&lcd_conf, 1, 0, 0);
+	if(hd44780_init(&lcd) == ESP_OK)
+	{
+		printf("Succesful LCD initialization\n");
+	}
+
+	if(hd44780_control(&lcd, 1, 0, 0) == ESP_OK)
+	{
+		printf("Turning on LCD\n");
+	}
 
 	// MPU6050 initialization
 	mpu6050_0_handle = mpu6050_create(I2C_NUM_0, MPU6050_I2C_ADDRESS_0);
@@ -170,29 +165,16 @@ void app_main(void)
 		printf("Successful MPU6050 initialization\n");
 	}
 	
-	// Create Semaphore
-	xSemaphore = xSemaphoreCreateBinary();
-
-	if(xSemaphore != NULL)
-	{
-		printf("Semaphore created successfully\n");
-	}
-
 	// Create Tasks
 	xTaskCreate(ActiveTask, "Active", 8192, NULL, 3, NULL);
-	xTaskCreate(SleepTask, "Sleep", 1024, NULL, 2, NULL);
 
 	// Checking if sleep works correctly
 	esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
+
 	if (wakeup_reason == ESP_SLEEP_WAKEUP_EXT0) {
     		printf("Woken up by button press!\n");
 	}
 
-	esp_reset_reason_t reset_reason = esp_reset_reason();
-	printf("Reset reason: %d\n", reset_reason);
-
 	printf("Wake count: %d\n", sleep_counter);
-
-	xSemaphoreGive(xSemaphore);
 }
 

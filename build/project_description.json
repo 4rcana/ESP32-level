@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "ESP32_level",
-    "project_version":    "1a8018a-dirty",
+    "project_version":    "eddc2a2-dirty",
     "project_path":       "D:/esp/ESP32_level",
     "idf_path":           "D:/esp/esp-idf",
     "build_dir":          "D:/esp/ESP32_level/build",

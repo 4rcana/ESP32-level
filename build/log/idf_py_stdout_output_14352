@@ -1,0 +1,648 @@
+SET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x4007ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2025 06:40:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b120h ( 45344) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b148 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b16c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d510 vaddr=40080000 size=02b08h ( 11016) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17b58h ( 97112) map[0m
+[0;32mI (157) esp_image: segment 5: paddr=00037b80 vaddr=40082b08 size=0b810h ( 47120) load[0m
+[0;32mI (176) esp_image: segment 6: paddr=00043398 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ESP32_level[0m
+[0;32mI (207) app_init: App version:      eddc2a2-dirty[0m
+[0;32mI (211) app_init: Compile time:     May 28 2025 14:39:26[0m
+[0;32mI (216) app_init: ELF file SHA256:  5f712b76a...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (224) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (242) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008E318 len 00011CE8 (71 KiB): IRAM[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Successful MPU6050 initialization
+Semaphore created successfully
+Wake count: 0
+Entering ActiveTask...
+[0;32mI (306) main_task: Returned from app_main()[0m
+Pitch: 0.957461
+Roll: 0.800096
+Entering ActiveTask...
+Pitch: 0.870249
+Roll: 0.951607
+Entering ActiveTask...
+Pitch: 1.104543
+Roll: 0.607436
+Entering ActiveTask...
+Pitch: 1.115589
+Roll: 0.720885
+Entering ActiveTask...
+Pitch: 1.223549
+Roll: 0.667867
+Entering ActiveTask...
+Pitch: 0.944663
+Roll: 0.686046
+Entering ActiveTask...
+Pitch: 0.895839
+Roll: 0.663868
+Entering ActiveTask...
+Pitch: 1.113250
+Roll: 0.621629
+Entering ActiveTask...
+Pitch: 0.824772
+Roll: 0.801934
+Entering ActiveTask...
+Pitch: 1.326803
+Roll: 0.880492
+Entering ActiveTask...
+Pitch: 0.977615
+Roll: 0.609424
+Entering ActiveTask...
+Pitch: 1.031498
+Roll: 0.763365
+Entering ActiveTask...
+Pitch: 1.030649
+Roll: 0.658309
+Entering ActiveTask...
+Pitch: 0.960169
+Roll: 0.762676
+Entering ActiveTask...
+Pitch: 1.050828
+Roll: 0.875208
+Entering ActiveTask...
+Pitch: 0.918677
+Roll: 0.474404
+Entering ActiveTask...
+Pitch: 0.910993
+Roll: 0.929096
+Entering ActiveTask...
+Pitch: 1.188686
+Roll: 0.626175
+Entering ActiveTask...
+Pitch: 1.172212
+Roll: 0.683020
+Entering ActiveTask...
+Pitch: 1.069693
+Roll: 0.824666
+Entering ActiveTask...
+Pitch: 1.099735
+Roll: 0.840012
+Entering ActiveTask...
+Pitch: 1.091156
+Roll: 0.786121
+Entering ActiveTask...
+Pitch: 1.041097
+Roll: 0.708192
+Entering ActiveTask...
+Pitch: 0.569140
+Roll: 0.919777
+Entering ActiveTask...
+Pitch: 1.127409
+Roll: 0.786006
+Entering ActiveTask...
+Pitch: 1.002587
+Roll: 0.762564
+Entering ActiveTask...
+Pitch: 1.193130
+Roll: 0.862794
+Entering ActiveTask...
+Pitch: 0.803051
+Roll: 0.614555
+Entering ActiveTask...
+Pitch: 1.155153
+Roll: 0.686040
+Entering ActiveTask...
+Pitch: 1.149264
+Roll: 0.676371
+Entering ActiveTask...
+Pitch: 1.088104
+Roll: 0.684475
+Entering ActiveTask...
+Pitch: 0.937878
+Roll: 0.812791
+Entering ActiveTask...
+Pitch: 1.187780
+Roll: 0.717085
+Entering ActiveTask...
+Pitch: 1.025013
+Roll: 0.627319
+Entering ActiveTask...
+Pitch: 1.162332
+Roll: 0.766978
+Entering ActiveTask...
+Pitch: 1.063343
+Roll: 0.808199
+Entering ActiveTask...
+Pitch: 1.036394
+Roll: 0.605496
+Entering ActiveTask...
+Pitch: 1.094572
+Roll: 0.881736
+Entering ActiveTask...
+Pitch: 1.109184
+Roll: 0.680939
+Entering ActiveTask...
+Pitch: 1.036635
+Roll: 0.710998
+Entering ActiveTask...
+Pitch: 0.925268
+Roll: 0.980362
+Entering ActiveTask...
+Pitch: 0.950848
+Roll: 0.597149
+Entering ActiveTask...
+Pitch: 1.145034
+Roll: 0.772207
+Entering ActiveTask...
+Pitch: 0.984629
+Roll: 0.857696
+Entering ActiveTask...
+Pitch: 0.992060
+Roll: 0.551968
+Entering ActiveTask...
+Pitch: 1.062814
+Roll: 1.046388
+Entering ActiveTask...
+Pitch: 1.074633
+Roll: 0.827359
+Entering ActiveTask...
+Pitch: 0.998817
+Roll: 0.638204
+Entering ActiveTask...
+Pitch: 1.033543
+Roll: 0.896188
+Entering ActiveTask...
+Pitch: 1.009135
+Roll: 0.614742
+Entering ActiveTask...
+Pitch: 0.952354
+Roll: 0.848051
+Entering ActiveTask...
+Pitch: 1.167292
+Roll: 0.851735
+Entering ActiveTask...
+Pitch: 0.926282
+Roll: 0.801719
+Entering ActiveTask...
+Pitch: 1.121069
+Roll: 0.800552
+Entering ActiveTask...
+Pitch: 1.120792
+Roll: 0.505093
+Entering ActiveTask...
+Pitch: 0.982261
+Roll: 0.776848
+Entering ActiveTask...
+Pitch: 0.886856
+Roll: 0.650712
+Entering ActiveTask...
+Pitch: 1.075440
+Roll: 0.863731
+Entering ActiveTask...
+Pitch: 1.022274
+Roll: 0.927144
+Entering ActiveTask...
+Pitch: 1.189327
+Roll: 0.976547
+Entering ActiveTask...
+Pitch: 1.294154
+Roll: 0.723878
+Entering ActiveTask...
+Pitch: 0.822541
+Roll: 0.661341
+Entering ActiveTask...
+Pitch: 1.164737
+Roll: 0.528044
+Entering ActiveTask...
+Pitch: 1.155403
+Roll: 0.906946
+Entering ActiveTask...
+Pitch: 0.841101
+Roll: 0.790166
+Entering ActiveTask...
+Pitch: 1.006115
+Roll: 0.489047
+Entering ActiveTask...
+Pitch: 1.023969
+Roll: 0.556108
+Entering ActiveTask...
+Pitch: 1.023437
+Roll: 0.736881
+Entering ActiveTask...
+Pitch: 1.193917
+Roll: 0.739784
+Entering ActiveTask...
+Pitch: 1.015206
+Roll: 0.683326
+Entering ActiveTask...
+SET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2025 06:40:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b120h ( 45344) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b148 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b16c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d510 vaddr=40080000 size=02b08h ( 11016) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17b58h ( 97112) map[0m
+[0;32mI (157) esp_image: segment 5: paddr=00037b80 vaddr=40082b08 size=0b810h ( 47120) load[0m
+[0;32mI (176) esp_image: segment 6: paddr=00043398 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ESP32_level[0m
+[0;32mI (207) app_init: App version:      eddc2a2-dirty[0m
+[0;32mI (211) app_init: Compile time:     May 28 2025 14:39:26[0m
+[0;32mI (216) app_init: ELF file SHA256:  5f712b76a...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (224) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (242) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008E318 len 00011CE8 (71 KiB): IRAM[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Successful MPU6050 initialization
+Semaphore created successfully
+Wake count: 0
+Entering ActiveTask...
+[0;32mI (306) main_task: Returned from app_main()[0m
+Pitch: 0.872221
+Roll: 0.911446
+Entering ActiveTask...
+Pitch: 1.176670
+Roll: 0.810702
+Entering ActiveTask...
+Pitch: 1.094625
+Roll: 0.810862
+Entering ActiveTask...
+Pitch: 1.066512
+Roll: 0.666093
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2025 06:40:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b120h ( 45344) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b148 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b16c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d510 vaddr=40080000 size=02b08h ( 11016) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17b58h ( 97112) map[0m
+[0;32mI (157) esp_image: segment 5: paddr=00037b80 vaddr=40082b08 size=0b810h ( 47120) load[0m
+[0;32mI (176) esp_image: segment 6: paddr=00043398 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ESP32_level[0m
+[0;32mI (207) app_init: App version:      eddc2a2-dirty[0m
+[0;32mI (211) app_init: Compile time:     May 28 2025 14:39:26[0m
+[0;32mI (216) app_init: ELF file SHA256:  5f712b76a...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (224) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (242) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008E318 len 00011CE8 (71 KiB): IRAM[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Successful MPU6050 initialization
+Semaphore created successfully
+Wake count: 0
+Entering ActiveTask...
+[0;32mI (306) main_task: Returned from app_main()[0m
+Pitch: 0.952070
+Roll: 0.722993
+Entering ActiveTask...
+Pitch: 0.869133
+Roll: 0.754823
+Entering ActiveTask...
+Pitch: 1.096409
+Roll: 0.820989
+Entering ActiveTask...
+Pitch: 1.268276
+Roll: 0.877699
+Entering ActiveTask...
+Pitch: 1.157258
+Roll: 0.741573
+Entering ActiveTask...
+Pitch: 1.035727
+Roll: 0.791057
+Entering ActiveTask...
+Pitch: 1.106634
+Roll: 0.800126
+T)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2025 06:40:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b120h ( 45344) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b148 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b16c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d510 vaddr=40080000 size=02b08h ( 11016) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17b58h ( 97112) map[0m
+[0;32mI (157) esp_image: segment 5: paddr=00037b80 vaddr=40082b08 size=0b810h ( 47120) load[0m
+[0;32mI (176) esp_image: segment 6: paddr=00043398 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ESP32_level[0m
+[0;32mI (207) app_init: App version:      eddc2a2-dirty[0m
+[0;32mI (211) app_init: Compile time:     May 28 2025 14:39:26[0m
+[0;32mI (216) app_init: ELF file SHA256:  5f712b76a...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (224) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (242) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008E318 len 00011CE8 (71 KiB): IRAM[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Successful MPU6050 initialization
+Semaphore created successfully
+Wake count: 0
+Entering ActiveTask...
+[0;32mI (306) main_task: Returned from app_main()[0m
+Pitch: 0.952673
+Roll: 0.806032
+Entering ActiveTask...
+Pitch: 0.759116
+Roll: 0.505886
+Entering ActiveTask...
+Pitch: 0.945491
+Roll: 0.864718
+Entering ActiveTask...
+Pitch: 1.261659
+Roll: 0.508774
+Entering ActiveTask...
+Pitch: 1.005937
+Roll: 0.512999
+Entering ActiveTask...
+Pitch: 1.166573
+Roll: 0.906556
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3852
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2025 06:40:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b120h ( 45344) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b148 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001b16c vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d510 vaddr=40080000 size=02b08h ( 11016) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17b58h ( 97112) map[0m
+[0;32mI (157) esp_image: segment 5: paddr=00037b80 vaddr=40082b08 size=0b810h ( 47120) load[0m
+[0;32mI (176) esp_image: segment 6: paddr=00043398 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ESP32_level[0m
+[0;32mI (207) app_init: App version:      eddc2a2-dirty[0m
+[0;32mI (211) app_init: Compile time:     May 28 2025 14:39:26[0m
+[0;32mI (216) app_init: ELF file SHA256:  5f712b76a...[0m
+[0;32mI (220) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (224) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (242) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (252) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008E318 len 00011CE8 (71 KiB): IRAM[0m
+[0;32mI (270) spi_flash: detected chip: generic[0m
+[0;32mI (272) spi_flash: flash io: dio[0m
+[0;33mW (275) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (286) main_task: Started on CPU0[0m
+[0;32mI (296) main_task: Calling app_main()[0m
+[0;32mI (296) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Successful MPU6050 initialization
+Semaphore created successfully
+Wake count: 0
+Entering ActiveTask...
+[0;32mI (306) main_task: Returned from app_main()[0m
+Pitch: 0.954319
+Roll: 0.712781
+Entering ActiveTask...
+Pitch: 1.055653
+Roll: 0.820183
+Entering ActiveTask...
+Pitch: 1.226338
+Roll: 0.696993
+Entering ActiveTask...
+Pitch: 0.958732
+Roll: 0.907907
+Entering ActiveTask...
+Pitch: 1.003508
+Roll: 0.666679
+Entering ActiveTask...
+Pitch: 0.983641
+Roll: 0.898955
+Entering ActiveTask...
+Pitch: 1.140215
+Roll: 0.880456
+Entering ActiveTask...
+Pitch: 0.901238
+Roll: 0.761013
+Entering ActiveTask...
+Pitch: 0.792948
+Roll: 0.748591
+Entering ActiveTask...
+Pitch: 1.045878
+Roll: 0.747655
+Entering ActiveTask...
+Pitch: 1.089323
+Roll: 0.952336
+Entering ActiveTask...
+Pitch: 0.798901
+Roll: 0.742152
+Entering ActiveTask...
+Pitch: 0.810503
+Roll: 0.861665
+Entering ActiveTask...
+Pitch: 1.208527
+Roll: 0.839682
+Entering ActiveTask...
+Pitch: 0.948968
+Roll: 0.661928
+Entering ActiveTask...
+Pitch: 1.203701
+Roll: 0.962937
+Entering ActiveTask...
+Pitch: 1.270514
+Roll: 0.882293
+Entering ActiveTask...
+Pitch: 0.962276
+Roll: 1.055075
+Entering ActiveTask...
+Pitch: 1.000709
+Roll: 0.656039
+Entering ActiveTask...
+Pitch: 1.025936
+Roll: 0.827191
+Entering ActiveTask...
+Pitch: 0.817936
+Roll: 0.683844
+Entering ActiveTask...
+Pitch: 1.119815
+Roll: 0.750167
+Entering ActiveTask...
+Pitch: 1.256371
+Roll: 0.526583
+Entering ActiveTask...
+Pitch: 0.998962
+Roll: 0.549022
